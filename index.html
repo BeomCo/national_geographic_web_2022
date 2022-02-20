@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./slick/slick.css">
+    <script src="https://kit.fontawesome.com/aa93c0738c.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery_3_6_0.min.js"></script>
+    <script src="./slick/slick.js"></script>
+    <script src="./js/arr.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <div class="container">
+
+            <div class="logo">
+                <a href="">
+                    <img src="./img/toplogo.png" alt="logo">
+                </a>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a class="animal_menu">animals</a></li>
+                    <li><a class="environment_menu">environment</a></li>
+                    <li><a class="history_menu">HISTORY & CULTURE</a></li>
+                    <li><a class="science_menu">SCIENCE</a></li>
+                    <li><a class="travel_menu">TRAVEL</a></li>
+                    <li><a class="more_menu">more</a></li>
+                </ul>
+            </nav>
+
+            <div class="icon">
+                <a href="" class="profile"></a>
+                <a href="" class="search"></a>
+            </div>
+
+        </div>
+    </header>
+
+<script>
+    const main = document.querySelector("main");
+
+    let mainSlide = "";
+
+    mainSlide += `
+        <main>
+            <div class="slick">
+    `;
+    for(s = 1; s < 5; s++){
+        mainSlide += `
+        <div class="slide" style="background-image: url(./img/main_0${s}.png);">
+            
+        </div>
+        `;
+    }
+
+    mainSlide += `
+            </div>
+            <div class="dark">
+                <div class="banner">
+                    <div class="title">
+                        <div class="logo"></div>
+                        <h3>Coexistence between 
+                            humans and nature</h3>
+                    </div>
+                </div>
+            </div>    
+                </main>
+
+            `;
+            
+            
+    document.write(mainSlide)
+
+
+    $('.slick').slick({
+        dots: false,
+        prevArrow: false,
+        nextArrow: false,
+        speed: 1500,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        Infinity: true,
+    });
+
+</script>
+
+    <article>
+
+        <section id="stories">
+            <div class="container">
+                <h3>Lastest Stories</h3>
+
+                <div class="outer">
+
+                    <div class="box box1 fr2">
+                        <div class="img" style="background-image: url(./img/animals/animal_news_1.jpg);">
+                            <div class="empty"></div>
+                            <div class="txt">
+                                <h4>Animals</h4>
+                                <p>The adorable pika sounds an alarm for global warming</p>
+                                <a href="">read more →</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="box box2 fr1">
+                        <div class="img" style="background-image: url(./img/animals/animal_news_2.jpg);"></div>
+                        <div class="txt">
+                            <h4>Animals</h4>
+                            <p>Why some female humming birds masquerade as males</p>
+                            <a href="">read more →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="box box3 fr1">
+                        <div class="img" style="background-image: url(./img/animals/animal_news_3.jpg);"></div>
+                        <div class="txt">
+                            <h4>Animals</h4>
+                            <p>To save kelp forests, scientists try breeding sea st</p>
+                            <a href="">read more →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="box box4 fr1">
+                        <div class="img" style="background-image: url(./img/animals/animal_news_4.jpg);"></div>
+                        <div class="txt">
+                            <h4>ANIMALSCORONAVIRUS COVERAGE</h4>
+                            <p>Zoo animals get COVID-19 vaccines across the U.S.</p>
+                            <a href="">read more →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="box box5 fr1">
+                        <div class="img" style="background-image: url(./img/animals/animal_news_5.jpg);"></div>
+                        <div class="txt">
+                            <h4>Animals</h4>
+                            <p>Rattlesnakes trick humans into thinking they’re closer than they are</p>
+                            <a href="">read more →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="box box6 fr2">
+                        <div class="img" style="background-image: url(./img/animals/animal_news_6.jpg);">
+                            <div class="empty"></div>
+                            <div class="txt">
+                                <h4>Animals</h4>
+                                <p>Meet the incredible ice worm, which lives in glaciers</p>
+                                <a href="">read more →</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="box box7 fr2">
+                        <div class="img" style="background-image: url(./img/animals/animal_news_7.jpg);">
+                            <div class="empty"></div>
+                            <div class="txt">
+                                <h4>Animals</h4>
+                                <p>Why mammal pregnancies are so diverse</p>
+                                <a href="">read more →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box box8 fr1">
+                        <div class="img" style="background-image: url(./img/animals/animal_news_8.jpg);"></div>
+                        <div class="txt">
+                            <h4>Animals</h4>
+                            <p>Photographing the sleepless effort to save a cheetah</p>
+                            <a href="">read more →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="box box9 fr1">
+                        <div class="img" style="background-image: url(./img/animals/animal_news_9.jpg);"></div>
+                        <div class="txt">
+                            <h4>ANIMALSWILDLIFE WATCH</h4>
+                            <p>Photos show how people are working to protect cheetahs</p>
+                            <a href="">read more →</a>
+                        </div>
+                    </div>
+
+                    <div class="box box10 fr1">
+                        <div class="img" style="background-image: url(./img/animals/animal_news_10.jpg);"></div>
+                        <div class="txt">
+                            <h4>ANIMALSWILDLIFE WATCH</h4>
+                            <p>How you can help fight the illegal cheetah cub trade</p>
+                            <a href="">read more →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="box box11 fr1">
+                        <div class="img" style="background-image: url(./img/animals/animal_news_11.jpg);"></div>
+                        <div class="txt">
+                            <h4>MAGAZINEWILDLIFE WATCH</h4>
+                            <p>Cheetah cubs poached and sold as pets, Instagram props</p>
+                            <a href="">read more →</a>
+                        </div>
+                    </div>
+
+                    <div class="box box12 fr2">
+                        <div class="img" style="background-image: url(./img/animals/animal_news_12.jpg);">
+                            <div class="empty"></div>
+                            <div class="txt">
+                                <h4>Animals</h4>
+                                <p>Thirsty animals stay hydrated using these ingenious techniques</p>
+                                <a href="">read more →</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+<script>
+
+    let storiesSection = document.querySelector("#stories .container");
+    const storiesOuter = document.querySelector("#stories .outer");
+    const storiesBox = document.querySelectorAll("#stories .outer .box");
+    const animalBtn = document.querySelector(".animal_menu");
+    const environmentBtn = document.querySelector(".environment_menu");
+    const historyBtn = document.querySelector(".history_menu");
+    const scienceBtn = document.querySelector(".science_menu");
+    const travelBtn = document.querySelector(".travel_menu");
+    const moreBtn = document.querySelector(".more_menu");
+
+    
+    function animaltLoad(){
+        for(e = 0; e < stories_animal.length; e++){
+            boxImg = document.querySelector(`#stories .outer .box${e + 1} .img`).style.backgroundImage = `url('./img/animals/animal_news_${e + 1}.jpg')`
+            boxH = document.querySelector(`#stories .outer .box${e + 1} h4`).textContent = stories_animal[e][0];
+            boxP = document.querySelector(`#stories .outer .box${e + 1} p`).textContent = stories_animal[e][1];
+        }
+    }
+    
+    function environmentLoad(){
+        for(e = 0; e < stories_environment.length; e++){
+            boxImg = document.querySelector(`#stories .outer .box${e + 1} .img`).style.backgroundImage = `url('./img/environment/environ_news_${e + 1}.jpg')`
+            boxH = document.querySelector(`#stories .outer .box${e + 1} h4`).textContent = stories_environment[e][0];
+            boxP = document.querySelector(`#stories .outer .box${e + 1} p`).textContent = stories_environment[e][1];
+        }
+    }
+
+    function historyLoad(){
+        for(e = 0; e < stories_history.length; e++){
+            boxImg = document.querySelector(`#stories .outer .box${e + 1} .img`).style.backgroundImage = `url('./img/history/history_news_${e + 1}.jpg')`
+            boxH = document.querySelector(`#stories .outer .box${e + 1} h4`).textContent = stories_history[e][0];
+            boxP = document.querySelector(`#stories .outer .box${e + 1} p`).textContent = stories_history[e][1];
+        }
+    }
+
+    function scienceLoad(){
+        for(e = 0; e < stories_sience.length; e++){
+            boxImg = document.querySelector(`#stories .outer .box${e + 1} .img`).style.backgroundImage = `url('./img/science/science_news_${e + 1}.jpg')`
+            boxH = document.querySelector(`#stories .outer .box${e + 1} h4`).textContent = stories_sience[e][0];
+            boxP = document.querySelector(`#stories .outer .box${e + 1} p`).textContent = stories_sience[e][1];
+        }
+    }
+
+    function travelLoad(){
+        for(e = 0; e < stories_travel.length; e++){
+            boxImg = document.querySelector(`#stories .outer .box${e + 1} .img`).style.backgroundImage = `url('./img/travel/travel_news_${e + 1}.jpg')`
+            boxH = document.querySelector(`#stories .outer .box${e + 1} h4`).textContent = stories_travel[e][0];
+            boxP = document.querySelector(`#stories .outer .box${e + 1} p`).textContent = stories_travel[e][1];
+        }
+    }
+    
+    const storiesLocation = document.querySelector("#stories").offsetTop;
+    // console.log(storiesLocation);
+    
+    animalBtn.addEventListener('click', function(){
+        animaltLoad();
+        window.scrollTo({top:storiesLocation, behavior:'smooth'});
+    });
+    environmentBtn.addEventListener('click', function(){
+        environmentLoad();
+        window.scrollTo({top:storiesLocation, behavior:'smooth'});
+    });
+    historyBtn.addEventListener('click', function(){
+        historyLoad();
+        window.scrollTo({top:storiesLocation, behavior:'smooth'});
+    });
+    scienceBtn.addEventListener('click', function(){
+        scienceLoad();
+        window.scrollTo({top:storiesLocation, behavior:'smooth'});
+    });
+    travelBtn.addEventListener('click', function(){
+        travelLoad();
+        window.scrollTo({top:storiesLocation, behavior:'smooth'});
+    });
+    
+
+
+</script>
+                    
+                </div>
+            </div>
+
+        </section>
+        <section id="content">
+            <div class="container">
+                <h3>Subscriber Exclusive Content</h3>
+
+<script>
+
+            const contentOuter = document.querySelector("#content");
+
+            let contentBox = "";
+
+            contentBox += `
+                <div class="outer">
+            `;
+            for(c = 0; c < content.length; c++){
+
+                if(c == 2){
+                    contentBox += `
+                    <div class="box" style="background-image: url(./img/poster_${4}.jpg);">
+                        <div class="dark">
+
+                            <div class="inner">
+                                <h4>${content[c][0]}</h4>
+                                <div class="line"></div>
+                                <p>${content[c][1]}</p>
+                                <a href="">read</a>
+                            </div>
+
+                        </div>
+                    </div>
+                `;
+                }else if(c == 3){
+                    contentBox += `
+                    <div class="box" style="background-image: url(./img/poster_${5}.jpg);">
+                        <div class="dark">
+
+                            <div class="inner">
+                                <h4>${content[c][0]}</h4>
+                                <div class="line"></div>
+                                <p>${content[c][1]}</p>
+                                <a href="">read</a>
+                            </div>
+
+                        </div>
+                    </div>
+                `;
+                }else{
+                    contentBox += `
+                    <div class="box" style="background-image: url(./img/poster_${c + 1}.jpg);">
+                        <div class="dark">
+
+                            <div class="inner">
+                                <h4>${content[c][0]}</h4>
+                                <div class="line"></div>
+                                <p>${content[c][1]}</p>
+                                <a href="">read</a>
+                            </div>
+
+                        </div>
+                    </div>
+                `;
+                }
+                
+                
+            };
+
+            contentBox += `
+                </div>
+
+            `;
+            
+            
+            document.write(contentBox)
+
+</script>
+
+            </div>
+        </section>
+
+        <section id="video">
+            <div class="container">
+                <h3>Video Content</h3>
+                <div class="outer">
+                    
+                    <div class="box">
+                        <video src="./video/animal.mp4" muted></video>
+                        <div class="dark">
+                            <i class="fas fa-video"></i>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <video src="./video/environment.mp4" muted></video>
+                        <div class="dark">
+                            <i class="fas fa-video"></i>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <video src="./video/history.mp4" muted></video>
+                        <div class="dark">
+                            <i class="fas fa-video"></i>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <video src="./video/science.mp4" muted></video>
+                        <div class="dark">
+                            <i class="fas fa-video"></i>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <video src="./video/travel.mp4" muted></video>
+                        <div class="dark">
+                            <i class="fas fa-video"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+
+<script>
+
+    const videoLocation = document.querySelector("#video").offsetTop;
+    moreBtn.addEventListener('click', function(){
+        window.scrollTo({top:videoLocation, behavior:'smooth'});
+    });
+
+    const video = document.querySelectorAll(".box video");
+    for(let i=0; i<video.length; i++){
+
+    video[i].addEventListener('mouseenter', function(e){
+        video[i].play();
+    });
+    video[i].addEventListener('mouseleave', function(e){
+        video[i].pause();
+    });
+    }
+
+</script>
+
+    </article>
+
+    <section id="signBanner">
+        <div class="container">
+            <h3>THE BEST OF NATIONAL GEOGRAPHIC DELIVERED TO YOUR INBOX</h3>
+            <p>Sign up for more inspiring photos, stories, and special offers from National Geographic.</p>
+            <a href="">sign up</a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer">
+
+                <div class="logo">
+                    <a href="">
+                        <img src="./img/footer_logo.jpg" alt="logo">
+                    </a>
+                </div>
+    
+                <nav>
+                    <ul>
+                        <li><a href="">Terms of Use</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Our Site</a></li>
+                    </ul>
+                </nav>
+    
+                <div class="sns">
+                    <a href="" class="fb"></a>
+                    <a href="" class="tw"></a>
+                    <a href="" class="yt"></a>
+                    <a href="" class="in"></a>
+                </div>
+        
+            </div>
+
+            <div class="copyright">
+                <p>Copyright © 2015-2021 National Geographic Partners, LLC. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
